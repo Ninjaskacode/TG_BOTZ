@@ -979,7 +979,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Jᴏɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ᴍᴀʜɴ! 😒", show_alert=True)
+            await query.answer("🗿𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗼𝘃𝗶𝗲𝘀 / 𝗦𝗲𝗿𝗶𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝘁𝗼 𝘂𝘀𝗲 𝘁𝗵𝗲 𝗕𝗼𝘁 🎞️", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -1372,15 +1372,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('🦋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🦋', url=CHNL_LNK),
+            
+                    InlineKeyboardButton('🎞️ 𝗠𝗼𝘃𝗶𝗲𝘀/𝗦𝗲𝗿𝗶𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🎞️', url=CHNL_LNK),
                     
                 ],[
-                    InlineKeyboardButton('👻 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('👾 Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('🆘 𝗛𝗲𝗹𝗽 🆘', callback_data='help'),
                 ],[
-                    InlineKeyboardButton('💰 Eᴀʀɴ Mᴏɴᴇʏ 💰', callback_data="shortlink_info")
+                    InlineKeyboardButton('ℹ️ 𝗔𝗯𝗼𝘂𝘁 ℹ️', callback_data='about');
+                ],[
+                    InlineKeyboardButton('💸 𝗘𝗮𝗿𝗻 𝗠𝗼𝗻𝗲𝘆 💸', callback_data="shortlink_info")
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1434,26 +1434,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     
     elif query.data == "help":
-        buttons = [[
-            InlineKeyboardButton('🛡 FIʟᴛᴇʀs 🛡', callback_data='filters'),
-            InlineKeyboardButton('🗂 Fɪʟᴇ Sᴛᴏʀᴇ 🗂', callback_data='store_file')
-        ], [
-            InlineKeyboardButton('♂️ Cᴏɴɴᴇᴄᴛɪᴏɴ ♂️', callback_data='coct'),
-            InlineKeyboardButton('🧊 Exᴛʀᴀ Mᴏᴅs 🧊', callback_data='extra')
-        ], [
-            InlineKeyboardButton('📝 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐏𝐇 ✏️', callback_data='tele'),
-            InlineKeyboardButton('🎵 𝐌𝐔𝐒𝐈𝐂 🎵', callback_data='song'), 
-            InlineKeyboardButton('ᴜʀʟ_sʜᴏʀᴛ', callback_data='urlshort')
-        ], [
-            InlineKeyboardButton('♻️ ꜱᴛɪᴄᴋᴇʀ ♻️', callback_data='sticker'), 
-            InlineKeyboardButton('❤‍🔥 ᴋᴀɴɢ ❤‍🔥', callback_data='kang') 
-        ], [
-            InlineKeyboardButton('⚖️ 𝐑𝐔𝐋𝐄𝐒 ⚖️', callback_data='rule'), 
-        ], [
-            InlineKeyboardButton('💠 Sᴛᴀᴛᴜs 💠', callback_data='stats'), 
-            InlineKeyboardButton('🏚 𝐇𝐎𝐌𝐄 🏚', callback_data='start')
+        <b>If you require assistance or have any inquiries, please feel free to contact us. You can reach out to us via direct message at @NotPiracy. We are here to help and provide support. Thank you.
+
+ buttons = [[
+     
+         InlineKeyboardButton('⬇️ 𝗛𝗼𝘄 𝘁𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 ⬇️', url="https://t.me/MidNightXMoviesV1/13")
+        ],[
+            InlineKeyboardButton(' 𝗠𝗼𝘃𝗶𝗲 𝗻𝗼𝘁 𝗳𝗼𝘂𝗻𝗱❓', url=https://t.me/NotPiracy")
+         ],[
+          InlineKeyboardButton('🎬 𝗛𝗼𝗺𝗲 🎬', callback_data='start')
         ]]
-        
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
