@@ -20,7 +20,7 @@ Here is the help for my commands.
 
   
 
-  CUDNT_FND = """I couldn't find anything related to {}
+  CUDNT_FND = """I ᴄᴏᴜʟᴅɴ'ᴛ find anything related to {}
 
 If spelling is correct and not found,
 
